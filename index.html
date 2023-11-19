@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-32x32.png">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Todo list</title>
+</head>
+<body>
+  <div class="container">
+    <div class="block">
+      <div class="create-task-form">
+        <h3 class="title">Нове завдання</h3>
+        <div class="input-field">
+          <input type="text" autocomplete="off" name="task" class="input task-input" placeholder="Введіть завдання">
+        </div>
+        <button type="button" class="button add-button">Додати завдання</button>
+      </div>
+    </div>
+    <div class="block">
+      <h3 class="title">Список завдань</h3>
+      <div class="input-field">
+        <input type="text" autocomplete="off" name="filter" class="input filter-input" placeholder="Пошук завдань">
+      </div>
+      <ul class="collection"></ul>
+      <button type="button" class="button remove-button">Видалити всі завдання</button>
+    </div>
+  </div>
+  <script src="toDo.js"></script>
+</body>
+</html>
